@@ -251,12 +251,11 @@ notes: Describe the repository and tracking of content review. Briefly describe 
 </ul>
 </div>
 <div class="fragment" style="float:left; width:42%; margin: 0 3%; font-size: 0.8em; position: relative">
-<h3 style="color: DarkOrange">Cons</h3>
+<h3 style="color: DarkOrange">Cautions</h3>
 <ul>
 <li>Steep learning curve</li>
 <li>Dependent on GitHub</li>
-<li>Templates rarely reviewed</li>
-<li>Unused/incomplete repositories</li>
+<li>Requires upkeep</li>
 </ul>
 </div>
 
