@@ -5,9 +5,9 @@ A multidisciplinary hub supporting research endeavours, partnerships, and educat
 
 Workshops developed and presented by librarians and graduate academic assistants (GAAs) <!-- .element: class="fragment" data-fragment-index="1" -->
 
-notes: Eugene and I work at the UBC Library Research Commons, a multidisciplinary hub that supports researchin general, including through workshops and consultations that help faculty and students develop research-enabling skills. 
+notes: I'll start by briefly introducing the UBC Library Research Commons, where Eugene and I work. It's a multidisciplinary hub that supports faculty and students through workshops and consultations that help develop research-enabling skills. Our materials are developed with an audience of graduate studens and faculty members in mind, though anyone is welcome to attend. 
 
-The Research Commons developed out of a peer support model, with many of its services offered by graduate students. Graduate Academic Assistants continue to be involved in many Research Commons activities: the workshops we will talk about today are a collaboration between librarians and GAAs - both in their development and delivery. 
+The Research Commons developed out of a peer support model, with many of its services offered by graduate students. Graduate Academic Assistants (GAAs) continue to be involved in many Research Commons activities. Each librarian in the Research Commons has their own area of focus - mine is Data Analysis and visualization, for example, and Eugene's is Research Data Management. And each librarian is paired with a GAA who collaborates on workshops.
 
 ---
 ### Distributed development 
@@ -17,9 +17,13 @@ The Research Commons developed out of a peer support model, with many of its ser
 - Hard to remain consistent <!-- .element: class="fragment" style="color:#7E3517" -->
 
 
-notes: I would argue that this collaborative workshop development model has worked well for us, and that incorporating the perspectives and insights of GAAs coming from many academic backgrounds (not just the Library and Information Science stream) has improved our content overall. But collaboration of this type  also introduces some challenges.
+notes: The result is a fairly distributed developent environment, with several small teams in the Research Commons working semi-autonomously toward the broader Research Commons goal.
 
-An obvious challenge is that graduate student involvement usually means higher turnover as students come and go. Onboarding new students and managing the transitions requires coordination as each new persong brings their own habits and preferences to the table. We're also split into smaller teams, each responsible for a certain area: Data Analysis and visualization in my case and RDM for Eugene. Needs and preferences also differ between teams.  also p content teams
+In my opinion this collaborative model works well for us. Incorporating the perspectives, skills, and insights of GAAs who come from many academic backgrounds has improved our content overall. But this approach also introduces some challenges.
+
+An obvious challenge is that graduate student involvement usually means higher turnover as students come and go. Even if some GAAs stay with the Research Commons longer, in any given year there is almost guaranteed to be turnover.
+
+Onboarding new students requires coordination as each new persong brings their own skills and preferences to the table - to say nothing of the preferences and habits of the _librarians_ they work with. Before the coordinated OER vision we adopted in 2020 there was much less consistency in how we developed and presented our material.
 
 ---
 ### The OER vision
@@ -27,11 +31,10 @@ An obvious challenge is that graduate student involvement usually means higher t
 - Open and reusable
 - Collaborative development
 - Consistent presentation
-- Using free tools
+- Free tools & open formats
+- Markdown for content
 
-notes: Collaborative, using freely available tools accessible outside the Library and the university
-Use tools employed by our teams
-Lower barriers to access and remixing
+notes: In 2019 and 2020 a reorganization of the UBC Library Research Commons led to a new vision for our workshops and supporting materials. We took inspiration from the Carpentries and developed our workshops as Open Educational Resources (OERs) that are freely available, and published with a Creative Commons liense that encourages reuse. We liked the collaborative development model we already had but came up with workflows that brought more consistency to the way we present our workshops, as some of you may have already experienced in our workshop websites. And our goal was to do this using free and open tools that are available to anyone, regardless of library or university affiliations. We hoped this would lower barriers to access and remixing, but it also encouraged us to adopt more flexible and sustainable authoring habits. Most of our websites and presentations slides are now written in markdown, so that the content lives in relatively simple text files that can be rendered in different contexts. 
 
 ---
 ### Chosen software/platforms
@@ -44,18 +47,15 @@ Lower barriers to access and remixing
 | GitHub Pages | _presentation (webpages)_ |
 | reveal.js | _presentation (slides)_ |
 
-notes: So we selected these tools
-The selection of these tools is opportunistic. Is it the only obvious choice: no. Would I choose it again: yes. But two big factors in selecting these: internal skill development, and existing champions/experience on the team.  
- 
-- Existing experience on the team with Git and Github
-- Already in use by members of the team for similar cases (GIS workshops)
-	- This included workshop content in repo and Reveal.js slides via GH Pages
+notes: These are the software and platforms we adopted for developing the OERs. Their selection was to some degree opportunistic - someone on our team had already used these tools to develop and publish workshop materials, so we had some knowledge to build on. 
 
-- Inspiration from the Carpentries' OER model
-- Philosophical desire to lower barriers to access and remixing
-- Not a UBC-specific platform / approach
-- Content requires only a browser window to access and is downloadable for bad connections
-- Student employees need to have access to content, not able to login into Intranets-   
+We use git for version control, which means we can re-write and update content without worrying about accidentally removing or overwriting something important, since we can always roll back to previous versions. 
+
+GitHub is a convenient platform for collaborating and sharing content, and one that many on our team already have experience with. It's also great for publishing: With GitHub Pages we can present each repository as a standalone website at no extra cost.
+
+And slides like the ones you see today are developed using reveal.js, which makes it easy to share presentations with only a browser, to integrate slides into workshop websites, or to reuse the content elsewhere. 
+
+This list of software is by no means the only way to accomplish these tasks...
 
 ---
 <!-- .slide: data-transition="slide-in fade-out" -->
@@ -66,19 +66,16 @@ The selection of these tools is opportunistic. Is it the only obvious choice: no
 - No software costs
 - Better workflow management
  
-notes:
-- New team, new desire to upskill and experiment with new workflows
-- Goal to better support technical consults
-- Text-based approach easy to move, remix, repurpose
-- Better ownership, collaboration, and maintenance workflows with growth in size of unit
-- Currently, Github Pages is free and unlimited for our use case
+notes: ...but there are a few reasons why it was a good fit for us. The first listed here is to strengthen the team's skills so we can provide better support in consultations with researcher. Writing in plain text files aligns with the values of flexibility, platform-independence, and sustainability. Our markdown content is easily moved, remixed, and repurposed. It's also a workflow that's entirely free for our use case.
+
+And perhaps most important of all, these tools set us up for much better content management. This includes ownership of material, collaboration within and across teams, and maintenance workflows. 
 
 
 ---
 <!-- .slide: data-transition="fade-in slide-out" data-background-color="#CFECEC" -->
 ## The workflow
 
-notes: An overview of the workflow for creating and publishing UBC Library Research Commons workshop websites.
+notes: So what does this actually look like in practice? How does an author on the Research Commons team go from markdown files to a published OER?
 
 ---
         <div style="width: 28%; font-size: 0.8em; padding: 2%; text-align: left; position: relative; float: left">
@@ -113,11 +110,11 @@ notes: The requirements for our workflow are relatively simple. GitHub is the on
 
 We gather the individual accounts under a GitHub organization, which makes it relatively easy to add or revoke rights as collaborators come and go. All our repositories are "owned" by the organization, not by individual acconts.  
 
-The workshop source material is written in Markdown. Many workshop sites include the presentation slides - these can be added to the repository in any format, but doing them in reveal.js provides more flexibility for presenting them within the workshop site.
+The workshop source material is written in Markdown. In some contexts it can be helpful to enhance the Markdown with html and even CSS. This is optional but can provide more flexibility in how the content is presented.
 
 The skills required for authoring content are familiarity with Markdown and GitHub. That's a relatively low barrier but those skills aren't universal and getting the whole team comfortable with the tools can take some work.
 
-In additon to the basic authoring skills, someone on the team will need to understand how Jekyll works, but that can be just one person to handle the theme and configuration options.</p>
+In additon to the basic authoring skills, someone on the team will need to understand how GitHub Pages works, but that can be just one person to handle the theme and configuration options.</p>
 
 ---
 
@@ -157,7 +154,7 @@ What do you think about the following file names?
 <span>Excerpt from <https://github.com/ubc-library-rc/rdm/blob/rdm-pages/content/01_file_naming.md></span> <!--.element: style="font-size:24px; font-style: italic; opacity: 0.8" -->
 
 
-notes: Here's an example of a Markdown file for the front page of an RDM workshop about file naming.
+notes: Here's an example of a Markdown file for the front page of an RDM workshop about file naming. You might also notice that there's some html mixed in, which can be used for some needs that aren't met by standard Markdown. When rendered using GitHub pages, this exact markdown...
 
 ---
 <!-- .slide: data-background-iframe="https://ubc-library-rc.github.io/rdm/content/01_file_naming.html" data-backround-interactive data-background-transition="zoom" -->
@@ -165,7 +162,7 @@ notes: Here's an example of a Markdown file for the front page of an RDM worksho
 ...to published workshop site <!-- .element: style="position: absolute; left: 65%; top: -300px; width: 30%; color: white; background-color: grey; opacity: 0.8; font-size: 0.8em" -->
 
           
-notes: And this is the website for the corresponding workshop created by Eugene and the GAAs he works with. The layout is simple and consistent, with visual elements common to all Research Commons workshops, including the navigation menu on the left. 
+notes: ...becomes this website for a file naming OER created by Eugene and the GAAs he works with. The layout is simple and consistent, with visual elements common to all Research Commons workshops, including the navigation menu on the left. 
 
 ---
 <!-- .slide: data-auto-animate data-transition="none" -->
@@ -176,10 +173,10 @@ Each workshop/series is a GitHub repository
 ![Screenshot of file list](media/github-repo-content.png) <!-- .element: style="position: absolute; left: 55%; top: 15%" class="fragment" -->
 
 
-notes: Each workshop we publish in this way has its own GitHub repository in the Research Commons GitHub organization.
-Here's a snapshot of the repository for the Docker workshop. At the top level is the index.md file corresponding to the website front page, as well as the config yaml file, which we'll look at in more detail soon.
-In the "content" folder are multiple markdown files; each becomes its own page on the workshop site. This folder organization is useful but not required: the markdown files can be anywhere in the repository. How they're presented on the site is governed by a yaml header in each file, not by the structure of the repository.
-Those familiar with Jekyll will notice that there aren't many Jekyll-related files in this repo.
+notes: Each OER we publish in this way has its own GitHub repository in the Research Commons GitHub organization.
+Here's a snapshot of the repository for the File Naming workshop. At the top level is a "content" directory...
+
+...that contains several markdown files. Each file corresponds to one page on the OER website.
 
 ---
 <!-- .slide: data-transition="fade-in slide-out" -->
@@ -190,11 +187,10 @@ Website theme in its own GitHub repository
 
 <span>The Research Commons uses a modified version of the [Just the Docs](https://github.com/pmarsceill/just-the-docs) Jekyll theme</span> <!-- .element: style="font-size:24px; font-style: italic; opacity: 0.8" -->
 
-Notes: That's because in our workflow the Jekyll theme lives in a separate repository. This improves consistency across our workshop sites and makes updates and upgrades easier.
-
-The Jekyll theme we use in the Research Commons is based on the Just the Docs theme with some local changes to the layout and css files. This theme-repository is called upon whenever one of the workshop sites is built (whether by GitHub pages or in a local Jekyll environment).
+Notes: GitHub pages uses software called Jekyll to generate websites from a repository. The instructions for converting these markdown files into a website are in what's called a Jekyll theme. In the Research Commons workflow we maintain a customized Jekyll theme in its own repository. This improves consistency across our workshop sites and makes updates and upgrades easier. Every one of the OER repositories points to the Jekyll theme when it gets rendered as a website.
 
 ---
+
 <!-- .slide: data-transition="slide-in none-out" -->
 
 Applying theme to workshop sites: **config.yml**
@@ -217,8 +213,7 @@ plugins:
 
 Notes: The link between the content repository and the theme repository is established in the config yaml file.
 
-The _remote theme_ points to our theme repo and is all that's needed to stitch the workshop repository to the theme. The config file also contains copyright information.
-At the bottom is is a section that applies to those who run Jekyll locally to test the site before pushing to GitHub. Other settings you'd expect to find in a config file are covered by the config file associated with the theme repository.
+The _remote theme_ line points to our theme repository,  and is all that's needed to link the workshop repository to the theme. The config file also contains copyright information, which can be set for each workshop and is incorporated into the published site.
 
 ---
 <!-- .slide: data-transition="fade" -->
@@ -235,7 +230,7 @@ Notes: A challenge with any workflow in a team environment is getting everyone o
 - _GitHub Issues_ for specific changes
 - _Pull requests_ for community contributions
 
-notes: Describe the repository and tracking of content review. Briefly describe the functionality for GitHub issues, and how a platform designed for identifying and documenting the development of bug fixes and feature requests has many affordances for maintaining and improving our workshops in a group setting. Finally, note that through pull requests, members of the community and workshop participants who are familiar with GitHub can propose improvements.   
+notes: As a platform, GitHub also has affordances that help us when improving and maintaining our content. It's easy to do content review collaboratively without stepping on each others' using git branches, for example. GitHub issues is designed to track software development and bug fixes, but works just as well to keep track of suggested improvements or wishlists for our content. And through pull requests we can welcome contributions from anyone who has a GitHub account and an interest in making our resources better.
 
 ---
 <!-- .slide: data-transition="slide-in fade-out" -->
@@ -259,13 +254,16 @@ notes: Describe the repository and tracking of content review. Briefly describe 
 </ul>
 </div>
 
-notes: So, after several years does the implementation live up to the promise? Describe pros and cons. Provide examples of practical things you've done that you couldn't have otherwise. Be honest about the commitment required for poeple who are new to the tools. When GitHub changes a workflow, so do we. 
+notes: Before handing things over to Eugene I want to share some of my own reflections about this setup. After several years, does the implementation live up to the promise? 
+
+On the whole I would say yes, but with a few cautions. 
 
 Pros:
-We develop fluency with the tools that many researchers use, and by collaborating on these platforms we establish a higher baseline using the very text file formats that we often encourage researchers to use. We provide our material with a constent presentation, making it easier to both present and navigate the content. 
+Skill development is a big advantage, in my opinion. I had used both git and GitHub before, but not often enough for it to feel like part of my work... this workflow was a nudge that increased my sophistication in some of these tools. It can also present a valuable learning opportunity for the GAAs we hire. 
+I won't read through all the other pros because I spoke about many of them before, but I'd like to reinforce that our workflow has delivered on many of these promises. I would choose a very similar set of tools if setting up something like this again elsewhere. 
 
-Cons: 
-At times I wonder whether the time it takes to learn the tools and work in this environment is worth the effort. In particular I'm thinking about making slides in reveal.js, like the slide deck we're using for this presentation. People with limited markdown, html, and css may find it _much_ easier to collaborate on slides in Google Docs, for example.  
+Cautions: 
+But there are some things it's important to consider. The learning curve can be steep, especially if you're interested in customizing the Jekyll template or creating more sophisticated slides with reveal.js. Members of the team will likely need to commit to learning new tools, which can be discouragingly slow at first. One caution is our dependence on GitHub, the only software in the chain that isn't open source (despite its role in open source development). It's always possible that GitHub will change its services or features in a way that disrupts our setup, though we don't anticipate this in the near term. And my last comment is really just a reminder to check your rose-coloured glasses: any process requires upkeep. The workflow we use for OERs improved consistency and access to our materials, but the collection still needs pruning and care - something that I think Eugene does a great job with in his own OERs.   
 
 ---
 <!-- .slide: data-transition="fade-in slide-out" data-background-color="#CFECEC" -->
